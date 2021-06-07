@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "questions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "mark": {
+      "type": "string",
+      "required": true
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arr.answers"
+    },
+    "right_answer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "obj.right-answer"
+    },
+    "comprehension": {
+      "model": "comprehensions"
+    },
+    "quize_part": {
+      "model": "quize-parts"
+    }
+  }
+}

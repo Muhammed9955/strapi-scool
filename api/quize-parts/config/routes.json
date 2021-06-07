@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quize-parts",
+      "handler": "quize-parts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quize-parts/count",
+      "handler": "quize-parts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quize-parts/:id",
+      "handler": "quize-parts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quize-parts",
+      "handler": "quize-parts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quize-parts/:id",
+      "handler": "quize-parts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quize-parts/:id",
+      "handler": "quize-parts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

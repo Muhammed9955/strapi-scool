@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quizzes",
+  "info": {
+    "name": "quizzes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "required": false
+    },
+    "unit": {
+      "model": "units"
+    },
+    "result": {
+      "type": "string"
+    },
+    "old_result": {
+      "type": "string"
+    }
+  }
+}

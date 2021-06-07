@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comprehensions",
+  "info": {
+    "name": "comprehensions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "result": {
+      "type": "string",
+      "required": false
+    },
+    "quize_part": {
+      "via": "comprehension",
+      "model": "quize-parts"
+    },
+    "questions": {
+      "collection": "questions"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "unit": {
+      "model": "units"
+    },
+    "old_result": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comprehensions",
+      "handler": "comprehensions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comprehensions/count",
+      "handler": "comprehensions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comprehensions/:id",
+      "handler": "comprehensions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comprehensions",
+      "handler": "comprehensions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comprehensions/:id",
+      "handler": "comprehensions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comprehensions/:id",
+      "handler": "comprehensions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

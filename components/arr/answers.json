@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_arr_answers",
+  "info": {
+    "name": "answers",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
